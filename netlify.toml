@@ -1,12 +1,11 @@
 [build]
-  command = "npm install && NODE_OPTIONS=--openssl-legacy-provider npx expo export:web"
+  command = "npm run build"
   publish = "web-build"
 
 [build.environment]
-  NODE_VERSION = "18.17.0"
-  NPM_VERSION = "9.6.7"
-  CI = "false"
-  EXPO_USE_WEBPACK = "true"
+  NODE_VERSION = "16"
+  NPM_VERSION = "8"
+  NODE_OPTIONS = "--openssl-legacy-provider"
 
 [[redirects]]
   from = "/*"
