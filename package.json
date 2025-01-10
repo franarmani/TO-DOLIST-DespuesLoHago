@@ -2,16 +2,13 @@
   "name": "todolist",
   "license": "0BSD",
   "version": "1.0.0",
-  "homepage": "/TO-DOLIST-DespuesLoHago",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && expo export -p web",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d web-build"
+    "build": "expo export:web"
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.0",
