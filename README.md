@@ -2,6 +2,8 @@
 
 **DespuésLoHago** es una aplicación para Android desarrollada con **React Native** que te permite organizar tus tareas de manera fácil y divertida. Diseñada para quienes buscan simplicidad y eficiencia, esta app es el aliado perfecto para mantenerte enfocado y productivo.
 
+✅ Link de descarga: https://drive.google.com/file/d/18WnMj3J_fkyicSLmu4a8TGu4sRI8bxm3/view?usp=sharing
+
 ## Características Principales
 - **Crear tareas rápidamente**: Agrega tus pendientes en segundos.
 - **Organización intuitiva**: Visualiza tus tareas pendientes de manera clara y ordenada.
