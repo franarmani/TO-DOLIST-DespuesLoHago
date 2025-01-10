@@ -4,10 +4,10 @@
     "slug": "despueslohago",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/favicon.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/favicon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,15 +18,15 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.franarmani.despueslohago",
       "buildNumber": "1.0.0",
-      "icon": "./assets/favicon.png"
+      "icon": "./assets/icon.png"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/favicon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.franarmani.despueslohago",
-      "versionCode": 1,
+      "versionCode": 2,
       "permissions": [
         "RECEIVE_BOOT_COMPLETED",
         "VIBRATE",
@@ -38,7 +38,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "your-project-id"
+        "projectId": "f637d7d6-6579-4c1a-be2d-21e0d6b47def"
       }
     }
   }

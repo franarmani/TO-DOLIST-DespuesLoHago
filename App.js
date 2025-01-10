@@ -17,6 +17,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import TaskItem from './components/TaskItem';
 import SocialScreen from './components/SocialScreen';
 import ParticleEffect from './components/ParticleEffect';
+import SplashScreen from './screens/SplashScreen';
 import { updateNotification, cancelNotification, initializeNotifications } from './utils/notifications';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 
@@ -26,6 +27,7 @@ const STORAGE_KEY = '@tasks';
 
 function AppContent() {
   const { theme, toggleTheme } = useTheme();
+  const [isLoading, setIsLoading] = useState(true);
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
   const [showCompleted, setShowCompleted] = useState(false);
@@ -35,7 +37,12 @@ function AppContent() {
 
   // Cargar tareas al iniciar
   useEffect(() => {
-    loadTasks();
+    const initialize = async () => {
+      await loadTasks();
+      // Mantenemos el splash screen visible por la duración completa de la animación
+      // incluso si las tareas cargan antes
+    };
+    initialize();
   }, []);
 
   // Guardar tareas cuando cambien
@@ -277,6 +284,10 @@ function AppContent() {
       padding: 8,
     },
   });
+
+  if (isLoading) {
+    return <SplashScreen onFinish={() => setIsLoading(false)} />;
+  }
 
   return (
     <KeyboardAvoidingView
