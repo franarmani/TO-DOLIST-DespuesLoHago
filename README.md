@@ -1,27 +1,21 @@
-# Después Lo Hago
+# DespuésLoHago
 
-**Después Lo Hago** es una app de gestión de tareas diseñada para ayudarte a organizar tus pendientes de forma rápida y sencilla. Con esta herramienta, podrás dejar de procrastinar y empezar a cumplir tus metas.
+**DespuésLoHago** es una aplicación para Android desarrollada con **React Native** que te permite organizar tus tareas de manera fácil y divertida. Diseñada para quienes buscan simplicidad y eficiencia, esta app es el aliado perfecto para mantenerte enfocado y productivo.
 
----
+## Características Principales
+- **Crear tareas rápidamente**: Agrega tus pendientes en segundos.
+- **Organización intuitiva**: Visualiza tus tareas pendientes de manera clara y ordenada.
+- **Diseño moderno y minimalista**: Interfaz atractiva y fácil de usar.
+- **Recordatorios**: No olvides nada importante.
+- **Eficiencia móvil**: Optimizado exclusivamente para dispositivos Android.
 
-## 🌟 Características principales
-
-- **Gestión rápida de tareas**: Agrega, edita y elimina tareas fácilmente.  
-- **Recordatorios personalizados**: Recibe notificaciones para no olvidar tus tareas importantes.  
-- **Organización por categorías**: Agrupa tus tareas por áreas como trabajo, personal o estudios.  
-- **Sistema de prioridades**: Marca tareas importantes para enfocarte en ellas primero.  
-- **Modo oscuro**: Diseñado para un uso cómodo, de día o de noche.  
-- **Sincronización automática** *(opcional)*: Accede a tus tareas desde cualquier dispositivo.  
-
----
-
-## 🚀 Beneficios
-
-- Mejora tu productividad y organización diaria.  
-- Reduce el estrés de olvidar tareas importantes.  
-- Mantén un registro claro de tus logros y avances.  
+## Tecnologías Utilizadas
+- **React Native**: Base del desarrollo multiplataforma.
+- **Expo**: Entorno para construir y probar la app.
+- **EAS Build**: Para la generación de APKs.
 
 ---
+
 
 ## 📸 Capturas de Pantalla
 
@@ -39,7 +33,66 @@
 
 https://github.com/user-attachments/assets/3678038b-868a-4b73-b064-e51af4dd21a4
 
+---
+
+
+## 🛠️ Instalación
+
+Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
+
+1. Clona este repositorio en tu máquina local.
+   ```bash
+   git clone https://github.com/franarmani/TO-DOLIST-DespuesLoHago-REACT-NATIVE
+   cd despueslohago
+   ```
+
+2. Instala las dependencias necesarias utilizando npm o yarn.
+   ```bash
+   npm install
+   ```
+   o
+   ```bash
+   yarn install
+   ```
+
+3. Inicia el servidor de desarrollo para probar la aplicación en Expo Go.
+   ```bash
+   npx expo start
+   ```
+
+4. Genera el APK para instalar la aplicación directamente en dispositivos Android.
+   Para ello, asegúrate de tener configurada la herramienta [EAS CLI](https://docs.expo.dev/eas/cli/):
+
+   - Instala EAS CLI globalmente.
+     ```bash
+     npm install -g eas-cli
+     ```
+
+   - Inicia sesión en tu cuenta de Expo.
+     ```bash
+     eas login
+     ```
+
+   - Configura el proyecto para EAS Build.
+     ```bash
+     eas build:configure
+     ```
+
+   - Genera el APK.
+     ```bash
+     eas build -p android --profile preview
+     ```
+
+5. Una vez completado, descarga el APK desde tu panel de Expo ([expo.dev](https://expo.dev)) e instálalo en tu dispositivo Android.
 
 ---
+
+## 🛡️ Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para obtener más información.
+
+---
+
+
 
 
